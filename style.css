@@ -1,0 +1,196 @@
+ :root{ 
+    --skin:#fca;
+    --skin-shadow:#ffb090;
+}
+.cartoon{
+    width: 100%;
+    aspect-ratio: 1;
+    background: rgba(25, 0, 255, 0.2);
+    position: relative;
+    --skin:#fca;
+}
+.cartoon div{
+    position: absolute;
+    box-sizing: border-box;
+}
+.face{
+    width: 100px;
+    height: 100px;
+    background:var(--skin);
+    border-radius: 43% 31% 100% 100% /100% 96% 100% 100%;
+    border: 4px solid;
+    /* transform: translateY(-30%) rotate(-30deg); */
+    top: 17%;
+    left: 46%;
+    box-shadow: inset 5px 1px #c002;
+    border-bottom: 4px  solid;
+    border-top: 3px solid;
+    }
+    .ear{
+        aspect-ratio: 1;
+        width: 35px;
+        border: 0.5vmin solid;
+        border-radius: 50%;
+        border-right: 3px solid transparent;  
+        border-left: 4px solid;
+        position: absolute;
+        transform: scaleX(-1);
+        left:  52%;
+        top: 18%;
+        background: var(--skin);
+    }
+   
+ .face .ear{
+    width: 30px;
+    height: 40px;
+    border: 0.5vmin solid;
+    border-radius: 50%;
+    border-right: 3px solid transparent;  
+    border-left: 4px solid;
+    top: 10%;
+    left: -20%;
+    background: var(--skin);
+    transform: scaleX(1);
+}
+.ear::before{
+    content: '';
+    width: 15px;
+    height: 20px;
+    border:  solid;
+    border-radius: 50%;
+    position: absolute;
+    left: -5%;
+    top: 20%;
+    border-left: 4px solid transparent;
+    border-bottom: 2px solid transparent;
+    box-shadow: inset -3px 2px var(--skin-shadow);
+}
+.ear::after{
+    content: '';
+    position:absolute;
+    width: 5px;
+    height: 5px;
+    border: 3px solid;
+    border-radius: 10px 10px 0 0 ;
+    left: 4px;
+    bottom: 8px;
+    border-bottom: 2px solid transparent;
+    box-shadow: -2px -3px var(--skin-shadow)
+}
+.eye{
+    width: 30%;
+height: 30%;
+border-radius: 50%;
+
+background:
+radial-gradient(circle at 39% 45%,#fff 10%,#0000 11%),
+radial-gradient(circle at 50% 55%,#000 20%,#0000 21%),white;
+border: 2px solid;
+left: 25%;
+top: 20%;
+transform: rotate(10deg);
+box-shadow: -2px 3px var(--skin-shadow);
+
+}
+.eye ~.eye{
+    transform: rotate(10deg);
+   left: 60%;
+  
+}
+.eye::before{
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-bottom: #000;
+    top: -50%;
+    border-right: #000;
+    border-left: #000;
+    transform: rotateX(20deg);
+    border-top: 5px solid;
+    left: -20%;
+}
+/* .neck{ */
+    width: 25px;                                             
+    height: 45px;
+    border: 2px solid;
+    border-radius: 18px/9px;
+    background: var(--skin);
+    top: 27%;
+    left: 35%;
+/* } */
+.mouth::before{
+    content: '';
+    width: 10%;
+    height: 12%;
+    border: 2px solid;
+    position: absolute;
+    border-right-color: #0000;
+    border-radius: 50%;
+    top: 65%;
+    border-bottom-color:#0000 ;
+    left: -2%;
+}
+.mouth{
+    width: 35%;
+    height: 30%;
+    border-bottom: 0.6vmin solid ;
+    border-radius: 50%;
+    top: 49%;
+    left: 35%;
+}
+.cheek{
+    position:absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 50%;
+    background: #f002;
+    left: 30%;
+    top: 33%;
+    transform: rotateX(60deg);
+    filter: blur(5px);
+}
+.nose{
+    aspect-ratio: 1;;
+    width: 15px;
+    height: 20px;
+    border-radius: 50%;
+    border: 6px solid;
+    left: 50%;
+    transform: rotateX(30deg) rotateY(50deg) rotate(60deg);
+    border-bottom: transparent;
+    border-right: transparent;
+    top: 45%;
+    box-shadow: inset -2px 4px var(--skin-shadow);
+}
+.body{
+    width: 500px;
+    height: 150px;
+    position: absolute;
+    border: 0.5px solid white;
+    left: 25%;
+    top: 4%;
+    background: #fca;
+
+}
+.body .smallbox{
+width: 30px;
+position: absolute;
+height: 30px;
+background-color:#fca;
+top: 90%;
+left: 65%;
+border: 2px solid white;
+transform: rotate(45deg);
+border-top: none;
+border-left: none;
+
+}
+p1{
+    /* position:absolute; */
+    font-size: 30px;
+    font-weight: 15px;
+    color:blue
+}
